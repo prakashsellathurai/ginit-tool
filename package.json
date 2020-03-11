@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@octokit/rest": "^15.11.2",
+    "@octokit/rest": "^17.1.0",
     "chalk": "^2.3.0",
     "clear": "0.1.0",
     "clui": "^0.3.6",
