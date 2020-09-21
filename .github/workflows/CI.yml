@@ -6,8 +6,8 @@ on:
       - "master"
 
 jobs:
-  bump-version:
-    name: "Bump Version on master"
+  npm release:
+    name: "npm release on master"
     runs-on: ubuntu-latest
 
     steps:
@@ -29,10 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "cat package.json"
         run: cat ./package.json
-  npm-relase:
-    name: "npm release"
-    runs-on: ubuntu-latest
-    steps: 
+      - name: "npm release"
       - uses: mikeal/merge-release@master
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
