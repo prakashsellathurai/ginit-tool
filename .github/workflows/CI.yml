@@ -1,4 +1,4 @@
-name: "Bump Version"
+name: "CI"
 
 on:
   push:
@@ -29,3 +29,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "cat package.json"
         run: cat ./package.json
+  npm-relase:
+    name: "npm release"
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: mikeal/merge-release@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            DEPLOY_DIR: ./
+            SRC_PACKAGE_DIR: https://registry.npmjs.org/ginit-tool
