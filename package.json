@@ -1,6 +1,6 @@
 {
   "name": "ginit-tool",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "cmd line utility nodejs",
   "main": "index.js",
   "scripts": {
@@ -42,6 +42,5 @@
   "homepage": "https://github.com/prakashsellathurai/ginit-tool#Readme",
   "directories": {
     "lib": "lib"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
