@@ -4,14 +4,14 @@
   "description": "cmd line utility nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "bin": {
     "ginit": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/prakashsellathurai/ginit-tool"
+    "url": "git+ssh://git@github.com/prakashsellathurai/ginit-tool.git"
   },
   "author": "Prakash Sellathurai",
   "license": "ISC",
