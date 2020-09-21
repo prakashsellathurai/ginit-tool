@@ -37,6 +37,7 @@ jobs:
         uses: "actions/checkout@v2"
         with:
           ref: ${{ github.ref }}
+        run: ls
       - name: "cat package.json"
         run: cat ./package.json
       - name: "Setup Node.js"
