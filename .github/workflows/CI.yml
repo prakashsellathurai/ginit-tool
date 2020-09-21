@@ -6,7 +6,7 @@ on:
       - "master"
 
 jobs:
-  npm release:
+  npm-release:
     name: "npm release on master"
     runs-on: ubuntu-latest
 
