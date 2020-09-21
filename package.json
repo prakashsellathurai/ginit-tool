@@ -42,5 +42,6 @@
   "homepage": "https://github.com/prakashsellathurai/ginit-tool#Readme",
   "directories": {
     "lib": "lib"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
