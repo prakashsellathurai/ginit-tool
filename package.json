@@ -1,5 +1,5 @@
 {
-  "name": "ginit",
+  "name": "ginit-tool",
   "version": "1.0.0",
   "description": "cmd line utility nodejs",
   "main": "index.js",
@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-  "ginit": "./index.js"
-},
-  "author": "",
+    "ginit": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/prakashsellathurai/ginit-tool"
+  },
+  "author": "Prakash Sellathurai",
   "license": "ISC",
   "dependencies": {
     "@octokit/rest": "^15.11.2",
@@ -24,5 +28,19 @@
     "simple-git": "^1.89.0",
     "touch": "^3.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "keywords": [
+    "ginit",
+    "cmdline",
+    "utility",
+    "tool",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/prakashsellathurai/ginit-tool/issues"
+  },
+  "homepage": "https://github.com/prakashsellathurai/ginit-tool#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
