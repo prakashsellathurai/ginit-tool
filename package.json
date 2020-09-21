@@ -1,6 +1,6 @@
 {
   "name": "ginit-tool",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "cmd line utility nodejs",
   "main": "index.js",
   "scripts": {
