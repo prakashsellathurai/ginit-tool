@@ -4,7 +4,8 @@
   "description": "cmd line utility nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "install": "npm install -g",
+    "test": "ginit test"
   },
   "bin": {
     "ginit": "index.js"

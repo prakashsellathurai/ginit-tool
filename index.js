@@ -6,6 +6,7 @@ const files = require('./lib/files')
 const figlet = require('figlet')
 const Configstore = require('configstore')
 const conf = new Configstore('ginit')
+const github = require('./lib/github')
 clear()
 console.log(
     chalk.yellow(
@@ -30,6 +31,12 @@ const getGithubToken = async() => {
 
 const run = async() => {
     try {
+        
+        if (process.argv.slice(2) == "test")
+        {
+            console.log("Ginit installed properly ");
+        }
+        else{
         // Retrieve & Set Authentication Token
         const token = await getGithubToken()
         github.githubAuth(token)
@@ -45,6 +52,7 @@ const run = async() => {
         if (done) {
             console.log(chalk.green('All done!'))
         }
+    }
     } catch (err) {
         if (err) {
             switch (err.code) {
